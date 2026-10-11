@@ -1,18 +1,18 @@
 # COMP 484 HW7 — Personal Resume Part 2
 
-Personal resume website for Anjella, a Computer Science student at California State University, Northridge (CSUN).
+Personal resume website for Angelo Varias, a Computer Science student at California State University, Northridge (CSUN).
 
 ## GitHub Pages
 
 After enabling GitHub Pages in **Settings → Pages** and deploying from the `main` branch using the root folder, replace the placeholder below with your published site URL:
 
-`https://YOUR-USERNAME.github.io/comp484-hw7/`
+https://avari77343.github.io/comp484-hw7/
 
 ## Files
 
 - `index.html` — resume content
 - `css/styles.css` — styling, content wrappers, spacing, float layout, and columns
-- `images/anjella-avatar.svg` — profile avatar illustration
+- `images/angelo-avatar.svg` — profile avatar illustration
 
 ## Before submitting
 
