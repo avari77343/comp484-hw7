@@ -1,0 +1,191 @@
+/* Color Palette (carried forward from HW6; change it if you choose your own palette)
+   #0B132B - Deep Navy
+   #1C2541 - Navy Blue
+   #3A506B - Slate Blue
+   #5BC0BE - Teal
+   #F4F7F6 - Off White
+   #111827 - Dark Text
+*/
+
+/* Global styles ------------------------------------ */
+/* Box model fix: padding and borders are included in each element's declared width. */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: #F4F7F6;
+    color: #111827;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* Shared content wrapper required by HW7. max-width keeps it flexible;
+   padding creates consistent spacing; overflow clears floated columns. */
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+/* Reusable two-column layout for the header and job entries. */
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Header & Footer ------------------------------------ */
+header {
+    background: #0B132B;
+    color: #F4F7F6;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header h2 {
+    margin-bottom: 20px;
+    color: #5BC0BE;
+}
+
+.profile-img {
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #5BC0BE;
+    /* Width, float, and spacing are handled by .column-narrow in HW7. */
+}
+
+footer {
+    background: #1C2541;
+    color: #F4F7F6;
+    text-align: center;
+}
+
+footer h2 {
+    color: #5BC0BE;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    color: #F4F7F6;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid #5BC0BE;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+    color: #5BC0BE;
+}
+
+/* Main sections ------------------------------------ */
+section {
+    margin: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(11, 19, 43, 0.08);
+}
+
+section h2 {
+    color: #0B132B;
+    border-bottom: 2px solid #5BC0BE;
+    padding-bottom: 8px;
+}
+
+.work-experience {
+    background: #E8F5F4;
+    border-left: 7px solid #5BC0BE;
+}
+
+.education {
+    background: #EDEFF5;
+    border-left: 7px solid #3A506B;
+}
+
+.skills {
+    background: #FFFFFF;
+    border-left: 7px solid #1C2541;
+}
+
+.job-item {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.job-item p:first-of-type {
+    color: #3A506B;
+    font-weight: 500;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+    .content-wrap {
+        padding: 28px 22px;
+    }
+
+    .column-narrow,
+    .column-wide {
+        width: 100%;
+        float: none;
+        min-height: 0;
+        padding-right: 0;
+    }
+
+    .profile-img {
+        display: block;
+        width: 180px;
+        margin: 0 auto 24px;
+    }
+
+    header h1,
+    header h2,
+    header p {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
